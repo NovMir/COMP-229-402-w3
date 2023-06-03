@@ -4,8 +4,6 @@
   "private": true,
   "scripts": {
     "start": "node server"
-
-
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.0",
@@ -19,5 +17,18 @@
     "morgan": "~1.9.1",
     "nodemon": "^2.0.22",
     "popper.js": "^1.16.1"
-  }
+  },
+  "description": "week 3 lab",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NovMir/COMP-229-402-w3.git"
+  },
+  "author": "noveen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NovMir/COMP-229-402-w3/issues"
+  },
+  "homepage": "https://github.com/NovMir/COMP-229-402-w3#readme"
 }
