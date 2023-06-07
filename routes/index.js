@@ -3,33 +3,33 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'This is a title'});
+  res.render('index', { title: 'Home'});
 });
 /* GET home page. */
 router.get('/home', function(req, res, next) {
-  res.render('index', { title: 'This is a title'});
+  res.render('index', { title: 'Home'});
 });
 
 module.exports = router;
-/* GET home page. */
+/* GET about me page. */
 router.get('/about', function(req, res, next) {
-  res.render('index', { title: 'About Me'});
+  res.render('index', { title: 'About'});
 });
 
 module.exports = router;
-/* GET home page. */
+/* GET projects page */
 router.get('/projects', function(req, res, next) {
   res.render('index', { title: 'Projects'});
 });
 
 module.exports = router;
-/* GET home page. */
+/* GET services page */
 router.get('/services', function(req, res, next) {
   res.render('index', { title: 'Services'});
 });
 
 module.exports = router;
-/* GET home page. */
+/* GET contact page */
 router.get('/contact', function(req, res, next) {
   res.render('index', { title: 'Contact'});
 });
