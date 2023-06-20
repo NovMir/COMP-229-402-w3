@@ -1,0 +1,34 @@
+{
+  "name": "comp-229-402-w3",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "bootstrap": "^5.3.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jquery": "^3.7.0",
+    "mongoose": "^7.3.0",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.22",
+    "popper.js": "^1.16.1"
+  },
+  "description": "week 3 lab",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NovMir/COMP-229-402-w3.git"
+  },
+  "author": "noveen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NovMir/COMP-229-402-w3/issues"
+  },
+  "homepage": "https://github.com/NovMir/COMP-229-402-w3#readme"
+}

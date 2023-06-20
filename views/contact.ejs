@@ -1,0 +1,34 @@
+<%- include partials/header.ejs %>
+
+<%- include  partials/main_nav.ejs %>
+
+
+
+    <div class="container-fluid  bg-dark-subtle mb-3">
+        <h1>Drop a line!</h1>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" required>
+            </div>
+           <div class="col-md-6">
+                <label for="lasttName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName" required>
+            </div>
+<div class="col-md-8">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" required>
+</div>
+<div class="col-md-12">
+    <label for="message" class="form-label">Message</label>
+    <textarea class="form-control" id="message" rows="4" required></textarea>
+</div>
+
+        </form>
+        <button type="submit" class="btn btn-dark mt-5">Submit</button>
+</div>
+
+
+
+<%-include partials/bottom_nav.ejs %>
+<%-include partials/footer.ejs %>
