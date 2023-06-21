@@ -51,7 +51,7 @@ module.exports.displayEditPage = async (req, res, next) =>{
 
     try {
         let contactToEdit = await Contact.findById(id);
-        res.render('businesscontacts/Edit', {
+        res.render('businesscontacts/edit', {
             title: 'Edit Contact', 
             contact: contactToEdit, 
             displayName: req.user ? req.user.displayName : ''});
