@@ -2,6 +2,8 @@ let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
 
+let passport = require('passport');
+
 //connect to our contact model
 let Contact = require ('../models/contacts');
 let contactsController = require('../controllers/contacts')

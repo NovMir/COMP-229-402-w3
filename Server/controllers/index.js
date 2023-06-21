@@ -64,7 +64,7 @@ module.exports.processLoginPage = (req, res, next) => {
             {
                 return next(err);
             }
-            return res.redirect('/game-list');
+            return res.redirect('/contact-list');
         });
     })(req, res, next);
 };
@@ -141,7 +141,7 @@ module.exports.processRegisterPage = async (req, res, next) => {
                 {
                     // if registration is successful
                     return passport.authenticate('local')(req, res, () => {
-                        res.redirect('/game-list')
+                        res.redirect('/contact-list')
                     });
                 }
             });

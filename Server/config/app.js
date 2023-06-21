@@ -8,7 +8,7 @@ let logger = require('morgan');
 let session = require('express-session');
 let passport = require('passport');
 let passportLocal = require('passport-local');
-let loclaStrategy = passport.Strategy;
+let localStrategy = passportLocal.Strategy;
 let flash = require('connect-flash');
 
 //database setup 
@@ -46,10 +46,6 @@ app.use(express.static(path.join(__dirname, '../../node_modules')));
 
 
 
-
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/contact-list', contactsRouter);
 app.use(session({
 
   secret: "SomeSecret",
@@ -57,8 +53,13 @@ app.use(session({
   resave: false
 }));
 
-//initilaize flass
+// Initilaize flash
 app.use(flash());
+
+app.use(function(req, res, next) {
+  res.locals.success_msg = req.flash('success_msg');
+  next();
+});
 //init passport
 app.use(passport.initialize());
 app.use(passport.session());
@@ -72,6 +73,13 @@ passport.use(User.createStrategy());
 
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
+
+
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
+app.use('/contact-list', contactsRouter);
+
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
