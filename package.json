@@ -5,6 +5,11 @@
   "scripts": {
     "start": "node server"
   },
+  "engines":{
+    "node":"^20.0.0",
+    "npm":"^9.0.0"
+  },
+
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.0",
     "bootstrap": "^5.3.0",
@@ -14,13 +19,13 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jquery": "^3.7.0",
+    "mongoose": "^7.3.0",
     "morgan": "~1.9.1",
     "nodemon": "^2.0.22",
     "popper.js": "^1.16.1"
   },
   "description": "week 3 lab",
   "main": "server.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NovMir/COMP-229-402-w3.git"
