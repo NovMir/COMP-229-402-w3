@@ -8,10 +8,10 @@ let Contact = require ('../models/contacts');
 router.get('/',async (req,res,next)=>{
 
 try {
-    let contactlist = await Contact.find();
-    console.log(contactlist)
+    let ContactList = await Contact.find();
+    console.log(ContactList)
      
-    res.render('businesscontacts/contactlist', {title:'Contact List', ContactList : contactlist})
+    res.render('businesscontacts/contactlist', {title:'Contact List', ContactList : ContactList})
 } catch (err)
 {
     console.error(err);
